@@ -1,0 +1,639 @@
+/*
+    CSS for simulator page only
+*/
+
+.rollContainer {
+    margin-top: 3.5%;
+    padding: 0 0 2% 0;
+    background: #bcf6fb;
+}
+
+.rollContainer .banner {
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    padding: 1% 0;
+}
+
+.rollContainer .banner img {
+    width: 60%;
+}
+
+.rollContainer .bannerSelect {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto 0 auto;
+}
+
+.rollContainer .bannerSelect select {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.rollContainer .tips {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    margin: 2% auto -1% auto;
+    padding: 0 10px;
+    background: #c8dcff;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.rollContainer .tips .tip1 {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 10px 2px 0 2px;
+}
+
+.rollContainer .tips .tip2 {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0 2px 10px 2px;
+}
+
+.rollContainer .buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 1% auto;
+}
+
+.rollContainer .buttonContainer button {
+    position: relative;
+    width: 12%;
+    height: 50px;
+    outline: 0;
+    margin: 3% 3% 0 3%;
+    border-radius: 5px;
+    border-color: pink;
+    background: pink;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rollContainer .buttonContainer .lButton {
+    margin-left: -47px;
+    padding: 5px 5px 5px 25px;
+    outline: 0;
+}
+
+.rollContainer .buttonContainer .rButton {
+    margin-right: -47px;
+    padding: 5px 29px 5px 5px;
+    outline: 0;
+}
+
+.rollContainer .buttonContainer .lButton:hover {
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background: pink;
+}
+    
+.rollContainer .buttonContainer .rButton:hover {
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background: pink;
+}
+
+.rollContainer .buttonContainer .animatedQuartzLeft, .rollContainer .buttonContainer .animatedQuartzRight {
+    position: relative;
+    height: 35px;
+    margin: 3.5% 0 0 0;
+    z-index: 1;
+}
+
+.rollContainer .multiRollDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 250px;
+    margin: 2% auto 0 auto;
+    padding: 0 0;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #c8dcff;
+}
+
+.rollContainer .multiRollDisplay img {
+    width: 12.5%;
+    margin: 2% 2%;
+    padding: 5px 5px;
+    border: thick solid silver;
+    border-image-slice: 1;
+    background-color: white;
+}
+
+.rollContainer .singleRollDisplay {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 20%;
+    margin: 2% auto 0 auto;
+    padding: 10px 10px;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #c8dcff;
+}
+
+.rollContainer .singleRollDisplay img {
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: thick solid silver;
+    border-image-slice: 1;
+    background-color: white;
+}
+
+.BBHover img {
+    position: fixed;
+    top: 13%;
+    left: 1%;
+    width: 9%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.BBHover .tooltipLeft {
+    visibility: hidden;
+    position: fixed;
+    top: 12%;
+    left: 8.75%;
+    width: 150px;
+    padding: 12px 12px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14.5px;
+    color: black;
+    text-align: left;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-out 0s;
+}
+
+.BBHover:hover .tooltipLeft {
+    visibility: visible;
+    opacity: 0.85;
+}
+
+.BBHover .tooltipLeft:after {
+    content: " ";
+    position: absolute;
+    top: 18%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.JeanneHover img {
+    position: fixed;
+    top: 13%;
+    right: 0%;
+    width: 8.75%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.JeanneHover .tooltipRight {
+    visibility: hidden;
+    position: fixed;
+    top: 8%;
+    right: 8.75%;
+    width: 150px;
+    max-height: 340px;
+    padding: 12px 12px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14.5px;
+    color: black;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-out 0s;
+}
+
+.JeanneHover:hover .tooltipRight {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.JeanneHover .tooltipRight:after {
+    content: " ";
+    position: absolute;
+    top: 13%;
+    left: 100%;
+    margin-top: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+.JeanneHover .tooltipRight .rateupImages {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 150px;
+    max-height: 210px;
+}
+
+.JeanneHover .tooltipRight .rateupImages img {
+    position: relative;
+    top: 0;
+    width: 60px;
+    cursor: default;
+    opacity: 1.0;
+}
+
+.JeanneHover .tooltipRight .rateupText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 150px;
+    max-height: 180px;
+}
+
+.JeanneHover .tooltipRight .rateupText p {
+    top: 20px; 
+    right: 20px;
+    margin: 0 0;
+    line-height: 90%;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.JeanneHover .tooltipRight .rateupText p:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(35px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotatecw {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    from {
+      transform: rotate(360deg);
+    }
+    to { 
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes tiltRight {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(-20deg);
+    }
+}
+
+@keyframes tiltLeft {
+    from {
+      transform: rotate(-20deg);
+    }
+    to { 
+      transform: rotate(30deg);
+    }
+}
+
+@keyframes returnCenter {
+    from {
+      transform: rotate(30deg);
+    }
+    to { 
+      transform: rotate(0deg);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header .logo {
+        margin-left: 25px;
+        margin-top: 10px;
+        width: 10em;
+    }
+    
+    nav ul li {
+        width: 50%;
+    }
+
+    .rollContainer {
+        min-height: 455px;
+    }
+
+    .rollContainer .tips {
+        font-size: 8px;
+    }
+
+    .BBHover .tooltipLeft {
+        font-size: 8px;  
+        width: 12%; 
+    }
+
+    .JeanneHover .tooltipRight {
+        width: 80px;
+        max-height: 340px;
+        font-size: 8px;
+    }
+
+    .JeanneHover .tooltipRight .rateupImages img {
+        width: 30px;
+    }
+
+    .JeanneHover .tooltipRight .rateupText p {
+        font-size: 8px;
+    }
+    
+    .JeanneHover .tooltipRight .rateupText p:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .rollContainer .buttonContainer .lButton, .rollContainer .buttonContainer .rButton {
+        height: 30px;
+        font-size: 6px;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzLeft {
+        margin-top: 3.5%;
+        margin-right: 3.5%;
+        height: 20px;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzRight {
+        margin-top: 3.5%;
+        margin-left: 3.5%;
+        height: 20px;
+    }
+
+    .rollContainer .multiRollDisplay {
+        width: 55%;
+        min-height: 100px;
+    }
+
+    .rollContainer .multiRollDisplay img {
+        width: 9.5%;
+        height: 9.5%;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 110px;
+    }
+
+    .rollContainer .singleRollDisplay img{
+        min-height: 80px;
+    }
+
+    .rollContainer .bannerSelect select {
+        font-size: 8px;
+        line-height: 8px;
+    }
+}
+
+@media only screen and (min-width: 640px) { 
+
+    .rollContainer {
+        min-height: 480px;
+    }
+
+    .rollContainer .buttonContainer .lButton, .rollContainer .buttonContainer .rButton {
+        font-size: 7px;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 120px;
+    }
+
+    .rollContainer .singleRollDisplay img{
+        min-height: 90px;
+    }
+}
+
+@media only screen and (min-width: 700px) {    
+    .rollContainer {
+        min-height: 510px;
+    }
+
+    .rollContainer .multiRollDisplay img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 140px;
+    }
+
+    .rollContainer .singleRollDisplay img{
+        min-height: 110px;
+    }
+}
+
+@media only screen and (min-width: 750px) { 
+
+    .rollContainer {
+        min-height: 510px;
+    }
+
+    .rollContainer .buttonContainer .lButton, .rollContainer .buttonContainer .rButton {
+        font-size: 9px;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzLeft {
+        margin-right: 3%;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzRight {
+        margin-left: 3%;
+    }
+
+    .BBHover .tooltipLeft {
+        font-size: 10px;  
+        width: 12%; 
+    }
+
+    .JeanneHover .tooltipRight {
+        width: 12%;
+    }
+    
+    .JeanneHover .tooltipRight .rateupImages img {
+        width: 45px;
+    }
+    
+    .JeanneHover .tooltipRight .rateupText p {
+        font-size: 10px;
+    }
+    
+    .JeanneHover .tooltipRight .rateupText p:nth-child(1) {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 800px) {    
+    .rollContainer {
+        min-height: 570px;
+    }
+
+    .rollContainer .tips {
+        font-size: 9px;
+    }
+
+    .rollContainer .bannerSelect select {
+        font-size: 9px;
+        line-height: 9px;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzLeft {
+        margin-right: 2.5%;
+    }
+    
+    .rollContainer .buttonContainer .animatedQuartzRight {
+        margin-left: 2.5%;
+    }
+
+    .rollContainer .multiRollDisplay {
+        min-height: 200px;
+    }
+
+    .rollContainer .multiRollDisplay img {
+        width: 11%;
+        height: 11%;
+    }
+
+    .rollContainer .singleRollDisplay img{
+        min-height: 140px;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 150px;
+    }
+}
+
+@media only screen and (min-width: 850px) {    
+    header .logo {
+        margin-left: 35px;
+        margin-top: 6px;
+        width: 12em;
+    }
+    
+    .rollContainer {
+        min-height: 598px;
+    }
+
+    .rollContainer .singleRollDisplay img{
+        min-height: 140px;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 150px;
+    }
+
+    .rollContainer .bannerSelect select {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (min-width: 940px) {    
+    .rollContainer {
+        min-height: 645px;
+    }
+
+    .rollContainer .tips {
+        font-size: 11px;
+    }
+
+    .rollContainer .multiRollDisplay {
+        width: 50%;
+    }
+
+    .rollContainer .buttonContainer .lButton, .rollContainer .buttonContainer .rButton {
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzLeft {
+        height: 28px;
+        margin-top: 3.5%;
+        margin-right: 1%;
+    }
+    
+    .rollContainer .buttonContainer .animatedQuartzRight {
+        height: 28px;
+        margin-top: 3.5%;
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (min-width: 1000px) { 
+    .rollContainer {
+        min-height: 760px;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 190px;
+    }
+
+    .rollContainer .singleRollDisplay img {
+        min-height: 190px;
+    }
+
+    .rollContainer .buttonContainer .animatedQuartzLeft {
+        margin-top: 3.4%;
+    }
+    
+    .rollContainer .buttonContainer .animatedQuartzRight {
+        margin-top: 3.4%;
+    }
+
+    .rollContainer .singleRollDisplay img{
+        min-height: 160px;
+    }
+
+    .rollContainer .singleRollDisplay {
+        min-height: 205px;
+    }
+    
+    .BBHover .tooltipLeft {
+        width: 150px;
+        font-size: 14.5px;
+    } 
+
+    .JeanneHover .tooltipRight {
+        width: 150px; 
+    }
+    
+    .JeanneHover .tooltipRight .rateupText p {
+        line-height: 90%;
+        font-size: 12px;
+    }
+}

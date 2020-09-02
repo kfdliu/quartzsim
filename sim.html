@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartz Sim</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sim.css">
+</head>
+<body id="body" onload="stats.updateStatsDisplay()">
+    
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo" class="logo"></a>
+
+        <nav>
+            <ul class = "nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sim.html">Simulator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rollContainer" id="rollContainer">
+
+        <div class="banner">
+            <img src="images/banners/StorySummonBanner.png" id="bannerImage"> 
+        </div>
+
+        <div class="bannerSelect"> 
+            <form action="">
+                <label for="Select a Banner: "></label>
+                <select name="banners" id="bannerChoice" onchange="bannerSelect()" size="1">
+                    <option value="story1" >Story Summon (No Story-Locked)</option>
+                    <option value="story2">Story Summon (With Story-Locked)</option>
+                    <option value="summer3-1">Summer Servant Festival Pickup Summon 1</option>
+                    <option value="summer3-2">Summer Servant Festival Pickup Summon 2</option>
+                    <option value="summer3-3">Summer Servant Festival Pickup Summon 3</option>
+                    <option value="14M">14 Million Downloads Campaign</option>
+                    <option value="fate/zero">Fate/Accel Zero Order (Rerun)</option>
+                    <option value="gilfest">Battle in New York</option>
+                    <option value="halloween3">Devil's Building Climber - Great Battle at Himeji Castle</option>
+                    <option value="halloween4">Mysterious Country of ONILAND - The Demon King and Kamui's Gold</option>
+                    <option value="15M">15 Million Downloads Campaign</option>
+                    <option value="christmas3">Merry Christmas from the Underworld</option>
+                    <option value="lostbelt3-1">LostBelt Chapter 3: SIN Release Campaign 1</option>
+                    <option value="lostbelt3-2">LostBelt Chapter 3: SIN Release Campaign 2</option>
+                    <option value="christmas4">Holy Samba Night - The Snowy Ruins and the Lady Knight</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="tips">
+            <p class="tip1">Hover Over BB For Stats // Click To Reset Stats<br></p>
+            <p class="tip2">Hover Over Jeanne For Rate-Ups // Click To View Next Category</p>
+        </div>
+
+        <div class="buttonContainer">
+            <img src="images/quartz.jpg" class="animatedQuartzLeft" id="lQuartz" onmouseover="animation.rotateQuartz('left')" onmouseout="animation.stopAnimation()" onclick="gachaObj.initiateMultiRoll()">
+            <button class="lButton" id="leftButton" onmouseover="animation.rotateQuartz('left')" onmouseout="animation.stopAnimation()" onclick="gachaObj.initiateMultiRoll()">Multi Roll</button>
+            <button class="rButton" id="rightButton" onmouseover="animation.rotateQuartz('right')" onmouseout="animation.stopAnimation()" onclick="gachaObj.initiateSingleRoll()">Single Roll</button>
+            <img src="images/quartz.jpg" class="animatedQuartzRight" id="rQuartz" onmouseover="animation.rotateQuartz('right')" onmouseout="animation.stopAnimation()" onclick="gachaObj.initiateSingleRoll()">
+        </div>
+
+        <div class="multiRollDisplay" id="rollDisplay">
+            <img class="roll1" id="roll1" src="images/icons/Mashuicon.webp">
+            <img class="roll2" id="roll2" src="images/icons/Mashuicon.webp">
+            <img class="roll3" id="roll3" src="images/icons/Mashuicon.webp">
+            <img class="roll4" id="roll4" src="images/icons/Mashuicon.webp">
+            <img class="roll5" id="roll5" src="images/icons/Mashuicon.webp">
+            <img class="roll6" id="roll6" src="images/icons/Mashuicon.webp">
+            <img class="roll7" id="roll7" src="images/icons/Mashuicon.webp">
+            <img class="roll8" id="roll8" src="images/icons/Mashuicon.webp">
+            <img class="roll9" id="roll9" src="images/icons/Mashuicon.webp">
+            <img class="roll10" id="roll10" src="images/icons/Mashuicon.webp">
+        </div>
+
+        <div class="singleRollDisplay" id="singleRoll">
+            <img id="roll11" src="images/icons/Mashuicon.webp"></img>
+        </div>
+  
+    </div>
+    
+    <div class="BBHover">
+        <img src="images/BBHover.png" id="bbimg" alt="BB" onclick="stats.clearStats()">
+        <span class="tooltipLeft" class="fade-in" id="rollStats"></span>
+    </div>
+
+    <div class="JeanneHover">
+        <img src="images/JeanneHover.png" id="jeanneimg" alt="jeanne" onclick="rateupDisplay.jeanneDisplayUpdate(false)">
+        <span class="tooltipRight" class="fade-in" id="rateupShowcase">
+            <div class="rateupImages" id="rateupShowcaseImages">
+                <img src="images/fgo_rateup_jeanne.webp" class="rateupEmpty" id=""/>
+            </div>
+            <hr>
+            <div class="rateupText" id="rateupShowcaseText"></div>
+        </span>
+    </div>
+    
+    <footer>
+        <p> ~ Created by Davis Liu ~ </p>
+    </footer>
+
+    <script type="text/javascript" src="js/bb-stats.js"></script>
+    <script type="text/javascript" src="js/image-dictionary.js"></script>
+    <script type="text/javascript" src="js/gacha-spread.js"></script>
+    <script type="text/javascript" src="js/banner-content.js"></script>
+    <script type="text/javascript" src="js/banner-select.js"></script>
+    <script type="text/javascript" src="js/gacha-permanent-pool.js"></script>
+    <script type="text/javascript" src="js/animations.js"></script>
+    <script type="text/javascript" src="js/jeanne-display.js"></script>
+    <script type="text/javascript" src="js/gacha.js"></script>
+
+</body>
+
+</html>

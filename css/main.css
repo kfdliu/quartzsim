@@ -1,0 +1,86 @@
+/*
+    This CSS should not be altered
+    This is included in each HTML file
+*/
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0 0 0 0;
+    font-family: 'Montserrat','sans-serif';
+}
+
+p, h1, h2, h3 {
+    margin: 0 10em 0 10em;
+    padding: 0.5em 0 0.5em 0;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr { 
+    display: block; 
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #9BDDF3;
+    padding-bottom: 1.5em;
+    width: 100%;
+}
+
+header .logo {
+    width: 12em;
+    margin-left: 35px;
+    margin-top: 6px;
+}
+
+header a {
+    outline: 0;
+}
+
+nav {
+    margin: 0 12% 0 12%;
+}
+
+nav ul li {
+    padding-top: 2.8em;
+    float: left;
+    width: 50%;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    margin-left: 3em;
+    color: #5A5A5A;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+    background: #FAF5AA;
+}

@@ -1,0 +1,103 @@
+/*
+    CSS for home page only
+*/
+
+p, h1 {
+    text-align: center;
+}
+
+section {
+    margin: 9em auto 12em auto;
+}
+
+section h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section1 p {
+    margin: 0 10em -1em 10em;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.dice {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;  
+    width: 25%;
+    margin: 0 auto 3.75em auto;
+    opacity: 25%;
+    z-index: -1;
+}
+
+.section2 {
+    margin-bottom: 0;
+    padding: 11em 0 10em 0;
+    background: #E49BC5;
+    transform: skewY(-2deg);
+}
+
+.section2 p, .section2 h1 {
+    transform: skewY(2deg);
+}
+
+.shinji {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18%;  
+    width: 15%;
+    margin: 0 auto 4em auto;
+    border-radius: 15px;
+    opacity: 35%;
+    z-index: -1;
+}
+
+.section3 {
+    background: white;
+    margin-bottom: auto;
+}
+
+.salt {
+    display: block;
+    width: 30%;
+    margin: -2em auto 5em auto;
+}
+
+.button {
+    width: 25%;
+    height: 90%;
+    margin: 2% auto 5% auto;
+    padding: 0.5em 0.5em;
+    border-radius: 27px;
+    background: #9BDDF3;   
+}
+
+.button p{
+    display: block;
+    margin: 0 auto 0 auto;
+    white-space: nowrap;
+    text-align: center; 
+}
+
+.button p a {
+    margin: 0 0;
+    padding: 0 0;
+    float: center;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    outline: 0;
+}
+
+.button p a:hover {
+    color: white;
+}
+
+footer {
+    background: #FAF5AA;
+}
