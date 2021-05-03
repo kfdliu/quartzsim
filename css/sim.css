@@ -2,6 +2,10 @@
     CSS for simulator page only
 */
 
+body {
+    font-family: 'Montserrat','sans-serif';
+}
+
 .rollContainer {
     margin-top: 3.5%;
     padding: 0 0 2% 0;
@@ -353,7 +357,7 @@
     }
 
     .rollContainer .tips {
-        font-size: 8px;
+        font-size: 14px;
     }
 
     .BBHover .tooltipLeft {
