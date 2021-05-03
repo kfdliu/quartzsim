@@ -16,47 +16,6 @@ section h1 {
     margin: 0 auto;
 }
 
-.section1 p {
-    margin: 0 10em -1em 10em;
-    padding: 0.5em 0 0.5em 0;
-}
-
-.dice {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;  
-    width: 25%;
-    margin: 0 auto 3.75em auto;
-    opacity: 25%;
-    z-index: -1;
-}
-
-.section2 {
-    margin-bottom: 0;
-    padding: 11em 0 10em 0;
-    background: #E49BC5;
-    transform: skewY(-2deg);
-}
-
-.section2 p, .section2 h1 {
-    transform: skewY(2deg);
-}
-
-.shinji {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 18%;  
-    width: 15%;
-    margin: 0 auto 4em auto;
-    border-radius: 15px;
-    opacity: 35%;
-    z-index: -1;
-}
-
 .section3 {
     background: white;
     margin-bottom: auto;
