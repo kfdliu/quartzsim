@@ -39,7 +39,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     margin: 2% auto -1% auto;
     padding: 0 10px;
     background: #c8dcff;
@@ -624,7 +624,7 @@ body {
     }
 
     .rollContainer .singleRollDisplay {
-        min-height: 205px;
+        min-height: 285px;
     }
     
     .BBHover .tooltipLeft {
